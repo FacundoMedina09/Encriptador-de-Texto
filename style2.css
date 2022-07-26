@@ -1,0 +1,179 @@
+body{
+    background: linear-gradient(lightblue, white);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+
+.logo{
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+/* Main */
+
+/* Cajas de Textos*/
+.cajas-textos{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.textentrada #textentrada, #textsalida{
+    padding: 1.5rem 2rem;
+    width: 35rem;
+    height: 20rem;
+    font-weight: 25rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    border: 2px solid lightblue;
+    box-shadow: 0 0 10px 2px gray;
+    box-sizing: border-box;
+    color: black;
+    outline: none;
+    border: none;
+    resize: none;
+    background: linear-gradient(white, lightblue);
+    border-radius: 5%;
+}
+
+/* Botones y aviso*/
+
+.aviso{
+    margin: 2rem 0;
+    margin-left: 2rem;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    font-style: italic;
+}
+.botones-caja{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+.botones-caja button {       
+    width: 15rem; 
+   font-size: 1.2rem;
+   font-style: italic;
+   font-weight: bold;
+   padding: 1rem 3rem;
+   margin-bottom: 2rem;
+   margin-left: 2rem;
+   left: 5rem;
+   border-radius: 10%;
+   
+}
+#boton1, #boton2, #boton3{                
+    background: rgb(195, 232, 245);
+    border: 2px solid lightblue;
+    box-shadow: 0 0 10px 2px gray;
+}
+#boton1:hover , #boton2:hover, #boton3:hover{
+
+    cursor: pointer;
+    font-size: 22px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 2px white;
+}
+footer{
+
+    background:rgb(158, 166, 184);
+    padding: 2rem 0;
+}
+.redes{        
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20rem;
+}
+.iconoesredes{     
+    width: 3rem;
+    height: 3rem;
+    border-radius: 25%;
+}
+.iconoesredes:hover{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+footer p{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media screen and (max-width: 600px){
+
+    .cajas-textos {
+        
+        width: 100%;
+        
+    }
+
+    .textentrada #textentrada{
+        width: 100%;
+    }
+    .textsalida{
+        width: 100%;
+    }
+    .textentrada ,#textentrada, #textsalida{
+
+        width: 100%;
+    }
+
+
+    .botones-caja button {
+        width: 30%;
+        font-size: 1rem;
+        padding: 1rem 1rem;
+        
+    }
+
+    .redes{
+
+        padding: 0 0;
+    }
+}
+
+@media screen and (max-width: 950px){
+
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        width: 10rem;
+        height: 10rem;
+        margin: 2 0;
+        margin-left: 0;
+    }
+
+    .cajas-textos {
+        
+        flex-direction: column;
+        align-items:center ;
+        
+    }
+
+    .textentrada, .textsalida{
+        margin-top: 2rem;
+    }
+
+    .aviso {
+        
+        margin-left: 0rem; 
+        
+        text-align: center;
+        
+    }
+    .botones-caja button{
+        margin-left: 0rem;
+    }
+    .redes{
+
+        padding: 0 5rem;
+    }
+}

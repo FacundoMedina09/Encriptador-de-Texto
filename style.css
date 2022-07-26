@@ -1,0 +1,317 @@
+
+body{
+    min-height: 100%;
+    background: linear-gradient(lightblue, white);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.logo{      /* Logo principal de Alura*/
+    
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.cajas-textos{
+
+    display: flex;
+    align-content: center;
+}
+
+
+
+
+.textentrada{       
+
+    width: 100%;
+    max-width: 650px;
+    position: relative;
+    margin-right: 10rem;
+    top: 50px;
+    left: 80px;
+
+}
+
+
+#textentrada, #textsalida{
+
+    width: 100%;
+    min-height: 20rem;
+    font-weight: 25rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    border: 2px solid lightblue;
+    box-shadow: 0 0 10px 2px gray;
+    box-sizing: border-box;
+    color: black;
+    outline: none;
+    border: none;
+    resize: none;
+    background: linear-gradient(white, lightblue);
+    border-radius: 5%;
+    
+}
+
+
+
+.textsalida  {
+
+    width: 30rem;
+   
+    position: relative;
+    
+    top: 50px;
+    
+    
+       
+
+}
+
+.botones-aviso{
+
+    margin-top: 6rem;
+
+}
+
+
+.aviso{     /* Aviso de minisculas */
+
+    color: black;
+    font-weight: bold;
+    
+    font-size: 15px;
+    font-style: italic;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+.botones button {       /* Botones */
+    max-width: 650px; 
+   font-size: 20px;
+   font-style: italic;
+   font-weight: bold;
+   padding: 1rem 3rem;
+   margin-bottom: 2rem;
+   margin-left: 8rem;
+   left: 5rem;
+   border-radius: 10%;
+   
+}
+
+#boton1{                /* Boton encriptar */
+
+    background: rgb(195, 232, 245);
+    border: 2px solid lightblue;
+    box-shadow: 0 0 10px 2px gray;
+}
+
+#boton2{                /* Boton desencriptar */
+    background: rgb(164, 223, 243);
+    border: 2px solid lightblue;
+    box-shadow: 0 0 10px 2px gray;
+}
+
+#boton3{                /* Boton copiar */
+
+    background: rgb(164, 223, 243);
+    border: 2px solid lightblue;
+    box-shadow: 0 0 10px 2px gray;
+    margin-left: 21.5rem;
+}
+
+#boton1:hover , #boton2:hover, #boton3:hover{
+
+    cursor: pointer;
+    font-size: 22px;
+    border: 2px solid white;
+    box-shadow: 0 0 10px 2px white;
+}
+
+footer{
+
+    background:rgb(158, 166, 184);
+    box-sizing: border-box;
+    padding: 20px 0;
+    align-items: center;
+    flex-direction: column;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.redes{         /* Redes */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+
+.redes a{
+
+    margin: 2rem 3rem;
+    cursor: pointer;
+}
+
+
+.iconoesredes{      /* imagenes de las redes */
+    
+    width: 3rem;
+    height: 3rem;
+    border-radius: 25%;
+}
+.iconoesredes:hover{
+    width: 3.2rem;
+    height: 3.2rem;
+    
+}
+
+footer p{
+
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+@media screen and(max-width: 950px){
+
+    .logo{      /* Logo principal de Alura*/
+    
+        
+        margin-left: 11rem;
+       
+    }
+
+
+    .botones #boton1, #boton2, #boton3{
+
+        margin-left: 10rem;
+
+    }
+
+    #boton3{
+
+        
+        margin-left: 10rem;
+        margin-right: 5rem;
+        padding: 1rem 2rem;
+        
+
+    }
+}
+
+@media screen and (max-width: 600px){
+
+
+}
+
+
+@media all and (max-width: 700px){
+
+    body{
+        width: auto ;
+        height: auto;
+
+    }
+    
+    
+    
+    .logo{      /* Logo principal de Alura*/
+    
+        width: 9.3rem;
+        height: 9.3rem;
+        margin-top: 2rem;
+        margin-left: 17rem;
+        left: auto;
+        right: auto;
+    }
+
+
+    .cajas-textos{
+
+        display: block;
+    }
+
+
+    .textentrada{   /* Texto de entrada*/
+
+        width: 95%;
+        left: 0.6rem;
+        margin-top: 1rem;
+        margin-bottom: 5rem;
+    }
+
+
+    .textsalida{        /* Texto de salida*/
+
+        width: 95%;
+        margin-left: 0.4rem;
+        margin-top: 2rem;
+        left: 0.25rem;
+    }
+
+    .botones-aviso {
+        margin-top: 0;
+    }
+
+    .aviso{         /* Aviso de letras */
+
+        
+        text-align: center;
+        font-size: 25px;
+        margin-top:1rem;
+        margin-left: 0;
+        margin-bottom: 0;
+        line-height: 10rem
+    }
+    .botones #boton1, #boton2{ /* Botones */        
+       
+        margin-right: 1rem;
+        padding: 1rem 2rem
+    }
+
+
+    .botones #boton2{
+
+        padding: 1rem 1rem;
+    }
+
+    .botones #boton3{ /* Boton copiar*/
+
+       
+        margin-left: 18rem;
+        margin-right: 5rem;
+        padding: 1rem 2rem;
+    }
+
+
+
+    footer p{
+        text-align: center;
+        font-size: 15px;
+        
+    }
+    .redes {
+        display: flex;
+        
+        align-items: center;
+    }
+    
+
+    .redes a{
+        margin-left: 2rem;
+
+    }
+}
+

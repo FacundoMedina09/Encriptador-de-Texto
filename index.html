@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name ="viewport" content="width= device-width, initial-scale=1.0"> 
+        <title> Encriptardor de Texto</title>
+        <link rel="icon" href="iconoencabezado.png">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200;1,300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <header>
+            <div class="header">
+                <img src="logo.jpg" alt="logo" class="logo">
+            </div>
+       </header>
+      
+        <main>
+            <div class="cajas-textos">
+
+                <div class="textentrada">
+                    <textarea name="entrada"  id="textentrada" placeholder="Ingrese su texto aqui"></textarea>
+                </div>
+
+                <div class="textsalida"> 
+                    <textarea name="salida" id="textsalida" placeholder="No se encontro ningun texto"></textarea>       
+                </div>
+
+            </div>
+            
+            <div class="aviso">
+                <p class="aviso">Solo letras sin acentos</p>
+            </div>
+
+            <div class="botones-caja">
+                
+                
+                   
+                <button id="boton1" onclick = "encriptar()">Encriptar</button>
+                <button id="boton2" onclick="desencriptar()">Desencriptar</button>
+                <button id="boton3" onclick="copyToClickBoard()">Copiar</button>
+                 
+                
+
+            </div>
+        </main>
+
+        <footer>
+            
+                <div class="redes">
+                 <a href="https://twitter.com/FsMc09"> <img src="twitter2.png" alt="Twitter" class="iconoesredes"></a>
+                 <a href="twitter.com"><img src="github.png	" alt="Github" class="iconoesredes"></a>
+                 <a href="https://www.instagram.com/facuu_.okk/?hl=es-la"><img src="instagram.png" alt="Instagram" class="iconoesredes"></a>
+                 <a href="https://www.linkedin.com/in/facundo-medina-cabrera-86320a225/"><img src="linkedin.png" alt="Linkedin" class="iconoesredes"></a>
+                </div>
+
+                <p>Diseñado por Facundo Santiago Medina Cabrera</p>
+            
+        </footer>
+
+        
+    </body>
+
+
+</html>
+
+
+<script src="prueba.js">
+
+
+</script>
